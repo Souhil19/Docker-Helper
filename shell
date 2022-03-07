@@ -1,0 +1,18 @@
+#!/usr/bin/sudo bash
+echo "Welcome to docker helper, which is tool to show a variety of informations of system ,containers and images related to docker"
+echo "Your solution to troubleshoot problems"
+
+if [ "$(id -nu)" != "root" ]; then
+echo "this script must be executed only by root"
+else
+a=`hostname`
+echo "hostname :" $a
+ 
+echo `systemctl start docker`
+echo `docker version`
+echo runnig containers:
+echo `docker ps`
+echo existing images:
+echo `docker image ls`
+fi
+
