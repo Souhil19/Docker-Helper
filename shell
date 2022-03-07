@@ -16,3 +16,5 @@ echo existing images:
 echo `docker image ls`
 fi
 
+# Developed by Souhil OMARI. Copyright © 2022. All Rights Reserved.
+# https://souhil-omari.me/
